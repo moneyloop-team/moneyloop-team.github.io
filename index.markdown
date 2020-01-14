@@ -5,4 +5,4 @@ nav_order: 1
 permalink: /
 ---
 
-[Application Form Widget](/docs/api/applicationform)
+Welcome to MoneyLoop's API documentation! Watch this space for more to come.
