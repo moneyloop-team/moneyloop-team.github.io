@@ -1,0 +1,11 @@
+# Metadata
+title: MoneyLoop Docs
+email: hello@moneyloop.com
+logo: "/assets/images/logo_blue.png"
+description: >-
+  Documentation for MoneyLoop APIs.
+github_username: moneyloop-team
+
+# Build settings
+theme: "just-the-docs"
+remote_theme: pmarsceill/just-the-docs
