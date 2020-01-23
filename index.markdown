@@ -5,4 +5,6 @@ nav_order: 1
 permalink: /
 ---
 
-Welcome to MoneyLoop's API documentation! Watch this space for more to come.
+This is the official documentation for MoneyLoop.
+
+If you have any feedback or suggestions, please [contact us](mailto:hello@moneyloop.com.au)
