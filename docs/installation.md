@@ -90,6 +90,11 @@ Below we show how to integrate the MoneyLoop Application Form into a standard `h
           let amounts       = null;
           let managed       = false;
 
+          // Let user set amount and term
+          let dynamic_loan  = false; //
+          let max_dynamic_loan_amount = 0;  // maximum $ amount of dynamic loan
+          let max_dynamic_loan_term   = 0;  // maximum term of loan in months
+
           /*
             The api_identifier allows you to provide a unique identifier for
             each Application Form request.
@@ -137,7 +142,13 @@ Below we show how to integrate the MoneyLoop Application Form into a standard `h
           // exposure      = 60025;    // $600.25
           // managed       = true;
           //
-          // // Payment Plan schedule
+
+          // Let user can set amount and term
+          // dynamic_loan  = true;
+          // max_dynamic_loan_amount = 5000; // $5,000 - set to 0 for unlimited
+          // max_dynamic_loan_term   = 24;   // 2 years
+
+          // Payment Plan schedule - will be overridden if dynamic_loan is set to true
           // dates   = ["2020-11-01", "2020-11-15"];
           // amounts = [30000, 30025]; // must in in cents
 
