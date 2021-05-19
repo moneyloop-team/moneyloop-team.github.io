@@ -80,6 +80,11 @@ Below we show how to integrate the MoneyLoop Application Form into a standard `h
           const api_key   = "XX";  // Your API Key
 
           // Declare all fields
+
+          // Payment type
+          let payment_type_credit_card  = true;
+          let payment_type_direct_debit = false;
+
           let exposure_type = null;
           let exposure      = null;
           let payment_cycle = null;
@@ -91,9 +96,20 @@ Below we show how to integrate the MoneyLoop Application Form into a standard `h
           let managed       = false;
 
           // Let user set amount and term
-          let dynamic_loan  = false; //
+          let dynamic_start_date = true; // user can set when repayments start
+          let dynamic_loan  = false; // user can set amount and term
           let max_dynamic_loan_amount = 0;  // maximum $ amount of dynamic loan
           let max_dynamic_loan_term   = 0;  // maximum term of loan in months
+
+          let kyc_check     = false; // set to true to perform KYC check - note: additional costs are incurred
+          let kyc_state     = null;
+          let kyc_iso_country_code = null;
+          let credit_risk_modelling = false; // Additional credit risk modelling - note: additional costs are incurred
+          let max_dynamic_loan_amount = 0;  // maximum $ amount of dynamic loan
+          let max_dynamic_loan_term   = 0;  // maximum term of loan in months
+          let checkPreviousAddress = false;
+
+          let validate_mobile = true;
 
           /*
             The api_identifier allows you to provide a unique identifier for
